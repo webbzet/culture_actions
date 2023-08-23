@@ -81,7 +81,7 @@ async def choise_way(message: Message):
 @router.message(F.text == 'Идём дальше!')
 async def exhibit(message: Message):
     if (
-        way_counter[message.from_user.id][1] < 
+        way_counter[message.from_user.id][1] <
         MAX_PLACES[way_counter[message.from_user.id][0] - 1]
     ):
         way_counter[message.from_user.id][1] = (
