@@ -63,7 +63,7 @@ jobs:
           script: | 
             sudo docker-compose stop 
             sudo docker-compose rm web 
-          # sudo docker pull ваш-логин-на-docker-hub/ваш-репозиторий-на-docker-hub:latest
+            sudo docker pull ваш-логин-на-docker-hub/ваш-репозиторий-на-docker-hub:latest
             rm .env 
             touch .env 
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
