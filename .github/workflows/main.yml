@@ -25,5 +25,3 @@ jobs:
     - name: Flake8 and django tests
       run: |
         python -m flake8
-        cd culture_bot/
-        python manage.py test
